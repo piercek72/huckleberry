@@ -1,12 +1,98 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 18px;
+    color: hsl(0, 0%, 0%);
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
+
+/* ----- DESIGN TOKENS
+
+Primary green
+    hsl(160deg, 100%, 30%)
+
+Secondary gold
+    hsl(45deg, 100%, 40%) (darker)
+    hsl(45deg, 100%, 50%) (lighter)
+
+Grays:
+    hsl(0deg, 0%, 0%) (black)
+    hsl(0deg, 0%, 10%) (very dark)
+    hsl(0deg, 0%, 30%) (dark)
+    hsl(0deg, 0%, 40%) (medium)
+    hsl(0deg, 0%, 60%) (light)
+    hsl(0deg, 0%, 100%) (white)
+
+Font-Sizes:
+    1rem, 1.25rem, 1.5rem, 2rem
+
+Spacing:
+    8px, 16px, 24px, 32px, 48px, 64px, 96px, 128px
+
+ ----- */
+
 /* Add styles here! */
+
+/* General */
+.max-width-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: min-content;
+    max-width: 800px;
+}
+
+/* header */
+header {
+    margin-bottom: 32px;
+    font-size: 1.5rem;
+}
+
+.intro-chunk {
+    padding: 16px 32px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 64px;
+}
+
+strong {
+    color: hsl(160, 100%, 30%);
+}
+
+/* main */
+main {
+    font-size: 1.25rem;
+
+    background-color: hsl(0, 0%, 60%);
+    border-top: 8px solid hsl(0, 0%, 40%);
+    padding: 96px 0;
+    overflow: hidden;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-bottom: 8px solid hsl(0, 0%, 40%);
+    padding: 16px 32px;
+}
+
+.indented-heading {
+    font-size: 1.5rem;
+
+    border-bottom: 8px solid hsl(45, 100%, 40%);
+    background-color: hsl(45, 100%, 50%);
+
+    padding: 24px 48px;
+    width: fit-content;
+    margin-left: -48px;
+    margin-top: -8px;
+}
